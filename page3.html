@@ -26,15 +26,15 @@
 <body>
     <div class="container">
         <h2>Deixe suas informações de contato:</h2>
-        <form action="https://formspree.io/f/xpzvdoqv" method="POST">
-            <label for="name">Nome:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="phone">Telefone:</label><br>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{2}[0-9]{9}" placeholder="XXYYYYYYYY" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="_replyto" required><br><br>
-            <button type="submit">Enviar</button>
-        </form>
+        <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/xpzvdoqv" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Nome e Sobrenome</label>
+    <input type="text" name="name" id="full-name" placeholder="" required="">
+    <label for="email-address">Email</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+    <label for="telephone">Telefone de Contato</label>
+    <input type="telephone" name="telephone" id="telephone" placeholder="(55) 55555-5555">
+</form>
     </div>
 
     <div class="footer">
