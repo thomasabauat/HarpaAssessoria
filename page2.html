@@ -25,11 +25,12 @@
         }
         #fs-frm-inputs label {
             margin-bottom: 5px;
+            display: flex;
+            align-items: center; /* Align items to the center */
         }
         #fs-frm-inputs input[type="text"],
         #fs-frm-inputs input[type="email"],
-        #fs-frm-inputs input[type="tel"],
-        #fs-frm-inputs input[type="checkbox"] {
+        #fs-frm-inputs input[type="tel"] {
             margin-bottom: 10px;
             width: 100%; /* Make inputs take full width */
             box-sizing: border-box; /* Ensure padding is included in the width */
@@ -70,10 +71,10 @@
                 <input type="tel" name="telephone" id="telephone" placeholder="(55) 55555-5555" pattern="[0-9]{11}" inputmode="numeric" required>
                 
                 <label>Com quais companhias você gostaria de trabalhar?</label>
-                <label><input type="checkbox" name="company[]" value="Liberty Seguros"> Liberty Seguros</label>
-                <label><input type="checkbox" name="company[]" value="Ituran Seguros"> Ituran Seguros</label>
-                <label><input type="checkbox" name="company[]" value="HDI Seguros"> HDI Seguros</label>
-                <label><input type="checkbox" name="company[]" value="Tokio Marine"> Tokio Marine</label><br><br>
+                <label><input type="checkbox" name="company[]" value="Liberty Seguros"> <span>Liberty Seguros</span></label>
+                <label><input type="checkbox" name="company[]" value="Ituran Seguros"> <span>Ituran Seguros</span></label>
+                <label><input type="checkbox" name="company[]" value="HDI Seguros"> <span>HDI Seguros</span></label>
+                <label><input type="checkbox" name="company[]" value="Tokio Marine"> <span>Tokio Marine</span></label><br><br>
             </fieldset>
             <input type="submit" value="Enviar">
         </form>
