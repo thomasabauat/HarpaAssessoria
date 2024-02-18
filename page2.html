@@ -16,6 +16,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 0 10px; /* Add some padding to the sides */
         }
         #fs-frm-inputs {
             display: flex;
@@ -30,9 +31,17 @@
         #fs-frm-inputs input[type="tel"],
         #fs-frm-inputs input[type="checkbox"] {
             margin-bottom: 10px;
+            width: 100%; /* Make inputs take full width */
+            max-width: 300px; /* Set a maximum width to prevent inputs from stretching too much on larger screens */
+            padding: 8px;
+            box-sizing: border-box; /* Ensure padding is included in the width */
         }
         #fs-frm-inputs input[type="submit"] {
             margin-top: 20px;
+            width: 100%; /* Make submit button take full width */
+            max-width: 300px; /* Set a maximum width */
+            padding: 10px;
+            box-sizing: border-box; /* Ensure padding is included in the width */
         }
         .footer {
             position: fixed;
@@ -40,6 +49,13 @@
             width: 100%;
             background-color: #f2f2f2;
             padding: 10px 0;
+        }
+
+        /* Media query for screens smaller than 600px (typical mobile phones) */
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 0 5px; /* Reduce padding for smaller screens */
+            }
         }
     </style>
 </head>
