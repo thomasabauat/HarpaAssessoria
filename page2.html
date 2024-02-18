@@ -26,21 +26,21 @@
 <body>
     <div class="container">
         <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/xpzvdoqv" method="post">
-  <fieldset id="fs-frm-inputs">
-    <label for="full-name">Nome e Sobrenome</label>
-    <input type="text" name="name" id="full-name" placeholder="" required="">
-    <label for="email-address">Email</label>
-    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-    <label for="telephone">Telefone</label>
-    <input type="telephone" name="telephone" id="telephone" placeholder="(55) 55555-5555">
-    <label for="complaint">Com quais companhias você gostaria de trabalhar?</label>
-    <input type="checkbox" name="company" value="Liberty Seguros"> Liberty Seguros<br>
-            <input type="checkbox" name="company" value="Ituran Seguros"> Ituran Seguros<br>
-            <input type="checkbox" name="company" value="HDI Seguros"> HDI Seguros<br>
-            <input type="checkbox" name="company" value="Tokio Marine"> Tokio Marine<br><br>
-              </fieldset>
-  <input type="submit" value="Próximo">
-</form>
+            <fieldset id="fs-frm-inputs">
+                <label for="full-name">Nome e Sobrenome</label>
+                <input type="text" name="name" id="full-name" placeholder="" required="">
+                <label for="email-address">Email</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                <label for="telephone">Telefone</label>
+                <input type="tel" name="telephone" id="telephone" placeholder="(55) 55555-5555">
+                <label for="complaint">Com quais companhias você gostaria de trabalhar?</label>
+                <input type="checkbox" name="company[]" value="Liberty Seguros"> Liberty Seguros<br>
+                <input type="checkbox" name="company[]" value="Ituran Seguros"> Ituran Seguros<br>
+                <input type="checkbox" name="company[]" value="HDI Seguros"> HDI Seguros<br>
+                <input type="checkbox" name="company[]" value="Tokio Marine"> Tokio Marine<br><br>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form>
     </div>
 
     <div class="footer">
