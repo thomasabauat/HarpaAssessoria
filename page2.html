@@ -16,12 +16,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 0 10px; /* Add some padding to the sides */
         }
         #fs-frm-inputs {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start; /* Align items to the start (left) */
+            width: 300px; /* Set a width for the form inputs */
         }
         #fs-frm-inputs label {
             margin-bottom: 5px;
@@ -32,14 +32,12 @@
         #fs-frm-inputs input[type="checkbox"] {
             margin-bottom: 10px;
             width: 100%; /* Make inputs take full width */
-            max-width: 300px; /* Set a maximum width to prevent inputs from stretching too much on larger screens */
-            padding: 8px;
             box-sizing: border-box; /* Ensure padding is included in the width */
+            padding: 8px;
         }
         #fs-frm-inputs input[type="submit"] {
             margin-top: 20px;
             width: 100%; /* Make submit button take full width */
-            max-width: 300px; /* Set a maximum width */
             padding: 10px;
             box-sizing: border-box; /* Ensure padding is included in the width */
         }
@@ -51,7 +49,6 @@
             padding: 10px 0;
         }
 
-        /* Media query for screens smaller than 600px (typical mobile phones) */
         @media only screen and (max-width: 600px) {
             .container {
                 padding: 0 5px; /* Reduce padding for smaller screens */
@@ -65,10 +62,13 @@
             <fieldset id="fs-frm-inputs">
                 <label for="full-name">Nome e Sobrenome</label>
                 <input type="text" name="name" id="full-name" placeholder="" required="">
+                
                 <label for="email-address">Email</label>
                 <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                
                 <label for="telephone">Telefone</label>
                 <input type="tel" name="telephone" id="telephone" placeholder="(55) 55555-5555">
+                
                 <label for="complaint">Com quais companhias você gostaria de trabalhar?</label>
                 <input type="checkbox" name="company[]" value="Liberty Seguros"> Liberty Seguros<br>
                 <input type="checkbox" name="company[]" value="Ituran Seguros"> Ituran Seguros<br>
