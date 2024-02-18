@@ -12,7 +12,27 @@
             text-align: center;
         }
         .container {
-            margin-top: 100px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #fs-frm-inputs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #fs-frm-inputs label {
+            margin-bottom: 5px;
+        }
+        #fs-frm-inputs input[type="text"],
+        #fs-frm-inputs input[type="email"],
+        #fs-frm-inputs input[type="tel"],
+        #fs-frm-inputs input[type="checkbox"] {
+            margin-bottom: 10px;
+        }
+        #fs-frm-inputs input[type="submit"] {
+            margin-top: 20px;
         }
         .footer {
             position: fixed;
