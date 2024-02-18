@@ -61,19 +61,19 @@
         <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/xpzvdoqv" method="post">
             <fieldset id="fs-frm-inputs">
                 <label for="full-name">Nome e Sobrenome</label>
-                <input type="text" name="name" id="full-name" placeholder="" required="">
+                <input type="text" name="name" id="full-name" placeholder="" required>
                 
                 <label for="email-address">Email</label>
-                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required>
                 
                 <label for="telephone">Telefone</label>
-                <input type="tel" name="telephone" id="telephone" placeholder="(55) 55555-5555">
+                <input type="tel" name="telephone" id="telephone" placeholder="(55) 55555-5555" pattern="[0-9]{11}" inputmode="numeric" required>
                 
-                <label for="complaint">Com quais companhias você gostaria de trabalhar?</label>
-                <input type="checkbox" name="company[]" value="Liberty Seguros"> Liberty Seguros<br>
-                <input type="checkbox" name="company[]" value="Ituran Seguros"> Ituran Seguros<br>
-                <input type="checkbox" name="company[]" value="HDI Seguros"> HDI Seguros<br>
-                <input type="checkbox" name="company[]" value="Tokio Marine"> Tokio Marine<br><br>
+                <label>Com quais companhias você gostaria de trabalhar?</label>
+                <label><input type="checkbox" name="company[]" value="Liberty Seguros"> Liberty Seguros</label>
+                <label><input type="checkbox" name="company[]" value="Ituran Seguros"> Ituran Seguros</label>
+                <label><input type="checkbox" name="company[]" value="HDI Seguros"> HDI Seguros</label>
+                <label><input type="checkbox" name="company[]" value="Tokio Marine"> Tokio Marine</label><br><br>
             </fieldset>
             <input type="submit" value="Enviar">
         </form>
